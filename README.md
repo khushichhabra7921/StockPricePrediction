@@ -1,10 +1,9 @@
 # 📈 Stock Market Prediction with Time Series ML
----
+
 ###
 A comprehensive machine learning project for predicting stock prices using time series analysis and multiple ML algorithms. This project automatically fetches real-time stock data, engineers technical indicators, trains multiple models, and provides next-day price predictions.
 ---
 # 🚀 Features
----
 ###
 Real-time Data Collection: Fetches live stock data from Yahoo Finance
 
@@ -23,7 +22,6 @@ Multi-stock Comparison: Compare prediction performance across multiple stocks
 ---
 
 # 📊 Technical Indicators
----
 ### The project automatically calculates 30+ technical indicators:
 ---
 # Price-based Indicators
@@ -65,16 +63,16 @@ Average True Range (if TA-Lib available)
 # Lagged Features
 ###
 Historical price lags (1, 2, 3, 5, 10 days)
-
+---
 Volume lags
 
 Returns lags
+
 ---
 
 # 🤖 Machine Learning Models
----
+
 # Traditional ML Models
----
 ###
 Linear Regression: Baseline linear model
 
@@ -114,5 +112,6 @@ Time Series Split: Prevents data leakage by respecting temporal order
 Walk-forward Validation: Tests on future unseen data
 
 Performance Comparison: Automatic best model selection
+
 ---
 
