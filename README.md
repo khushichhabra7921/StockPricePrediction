@@ -13,7 +13,7 @@ Multiple ML Models: Linear Regression, Random Forest, Gradient Boosting, SVR, an
 
 Time Series Aware: Proper time series validation to prevent data leakage
 
-Comprehensive Evaluation: RMSE, MAE, and R² metrics with visualizations
+Honest Evaluation: predicts next-day returns and compares RMSE against a "price won't change" baseline, plus directional (up/down) accuracy
 
 Next-day Predictions: Automated price predictions with confidence intervals
 
@@ -98,11 +98,13 @@ Optimized for time series prediction
 # 📈 Model Evaluation
 # Metrics Used
 ###
-RMSE (Root Mean Square Error): Primary metric for model selection
+Directional Accuracy: share of days where the predicted up/down move matches reality (primary metric for model selection; 50% = coin flip)
+
+RMSE (Root Mean Square Error): Error on next-day return, reported next to a no-change baseline RMSE
 
 MAE (Mean Absolute Error): Absolute prediction error
 
-R² Score: Explained variance ratio
+R² Score: Explained variance ratio (expected to be around zero or negative for daily returns)
 
 ---
 # Validation Strategy
